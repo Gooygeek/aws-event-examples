@@ -1,0 +1,25 @@
+{
+  "AlarmName": "IAMPolicyChanged",
+  "AlarmDescription": "Alarms when an API call is made to change an IAM policy.",
+  "AWSAccountId": "123456789123",
+  "NewStateValue": "ALARM",
+  "NewStateReason": "Threshold Crossed: 1 datapoint [5.0 (06/12/21 06:12:00)] was greater than or equal to the threshold (3.0).",
+  "StateChangeTime": "2021-12-06T06:17:29.413+0000",
+  "Region": "China (Ningxia)",
+  "AlarmArn": "arn:aws-cn:cloudwatch:cn-northwest-1:123456789123:alarm:IAMPolicyChanged",
+  "OldStateValue": "OK",
+  "Trigger": {
+    "MetricName": "IAMPolicyEventCount",
+    "Namespace": "CISBenchmark",
+    "StatisticType": "Statistic",
+    "Statistic": "SUM",
+    "Unit": null,
+    "Dimensions": [],
+    "Period": 300,
+    "EvaluationPeriods": 1,
+    "ComparisonOperator": "GreaterThanOrEqualToThreshold",
+    "Threshold": 3.0,
+    "TreatMissingData": "- TreatMissingData:                    notBreaching",
+    "EvaluateLowSampleCountPercentile": ""
+  }
+}

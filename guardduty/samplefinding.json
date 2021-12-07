@@ -1,0 +1,131 @@
+{
+  "version": "0",
+  "id": "32a17782-51dd-ef15-d2d0-6f1534951054",
+  "detail-type": "GuardDuty Finding",
+  "source": "aws.guardduty",
+  "account": "123456789123",
+  "time": "2021-12-06T23:55:05Z",
+  "region": "cn-northwest-1",
+  "resources": [],
+  "detail": {
+    "schemaVersion": "2.0",
+    "accountId": "123456789123",
+    "region": "cn-northwest-1",
+    "partition": "aws",
+    "id": "a6bec9157f392da5d749fe5a403b6a38",
+    "arn": "arn:aws-cn:guardduty:cn-northwest-1:123456789123:detector/7abe6003f42632a166973ffd0c51921c/finding/a6bec9157f392da5d749fe5a403b6a39",
+    "type": "Impact:EC2/MaliciousDomainRequest.Reputation",
+    "resource": {
+      "resourceType": "Instance",
+      "instanceDetails": {
+        "instanceId": "i-99999999",
+        "instanceType": "m3.xlarge",
+        "outpostArn": "arn:aws:outposts:us-west-2:123456789000:outpost/op-0fbc006e9abbc73c3",
+        "launchTime": "2016-08-02T02:05:06.000Z",
+        "platform": null,
+        "productCodes": [
+          {
+            "productCodeId": "GeneratedFindingProductCodeId",
+            "productCodeType": "GeneratedFindingProductCodeType"
+          }
+        ],
+        "iamInstanceProfile": {
+          "arn": "arn:aws:iam::123456789123:example/instance/profile",
+          "id": "GeneratedFindingInstanceProfileId"
+        },
+        "networkInterfaces": [
+          {
+            "ipv6Addresses": [],
+            "networkInterfaceId": "eni-bfcffe88",
+            "privateDnsName": "GeneratedFindingPrivateDnsName",
+            "privateIpAddress": "10.0.0.1",
+            "privateIpAddresses": [
+              {
+                "privateDnsName": "GeneratedFindingPrivateName",
+                "privateIpAddress": "10.0.0.1"
+              }
+            ],
+            "subnetId": "GeneratedFindingSubnetId",
+            "vpcId": "GeneratedFindingVPCId",
+            "securityGroups": [
+              {
+                "groupName": "GeneratedFindingSecurityGroupName",
+                "groupId": "GeneratedFindingSecurityId"
+              }
+            ],
+            "publicDnsName": "GeneratedFindingPublicDNSName",
+            "publicIp": "198.51.100.0"
+          }
+        ],
+        "tags": [
+          {
+            "key": "GeneratedFindingInstaceTag1",
+            "value": "GeneratedFindingInstaceValue1"
+          }, {
+            "key": "GeneratedFindingInstaceTag2",
+            "value": "GeneratedFindingInstaceTagValue2"
+          }, {
+            "key": "GeneratedFindingInstaceTag3",
+            "value": "GeneratedFindingInstaceTagValue3"
+          }, {
+            "key": "GeneratedFindingInstaceTag4",
+            "value": "GeneratedFindingInstaceTagValue4"
+          }, {
+            "key": "GeneratedFindingInstaceTag5",
+            "value": "GeneratedFindingInstaceTagValue5"
+          }, {
+            "key": "GeneratedFindingInstaceTag6",
+            "value": "GeneratedFindingInstaceTagValue6"
+          }, {
+            "key": "GeneratedFindingInstaceTag7",
+            "value": "GeneratedFindingInstaceTagValue7"
+          }, {
+            "key": "GeneratedFindingInstaceTag8",
+            "value": "GeneratedFindingInstaceTagValue8"
+          }, {
+            "key": "GeneratedFindingInstaceTag9",
+            "value": "GeneratedFindingInstaceTagValue9"
+          }
+        ],
+        "instanceState": "running",
+        "availabilityZone": "GeneratedFindingInstaceAvailabilityZone",
+        "imageId": "ami-99999999",
+        "imageDescription": "GeneratedFindingInstaceImageDescription"
+      }
+    },
+    "service": {
+      "serviceName": "guardduty",
+      "detectorId": "7abe6003f42632a166973ffd0c51921c",
+      "action": {
+        "actionType": "DNS_REQUEST",
+        "dnsRequestAction": {
+          "domain": "GeneratedFindingDomainName",
+          "protocol": "UDP",
+          "blocked": true
+        }
+      },
+      "resourceRole": "TARGET",
+      "additionalInfo": {
+        "threatListName": "GeneratedFindingThreatListName",
+        "sample": true
+      },
+      "evidence": {
+        "threatIntelligenceDetails": [
+          {
+            "threatListName": "GeneratedFindingThreatListName",
+            "threatNames": ["GeneratedFindingThreatName"]
+          }
+        ]
+      },
+      "eventFirstSeen": "2021-12-06T23:53:50.000Z",
+      "eventLastSeen": "2021-12-06T23:53:50.000Z",
+      "archived": false,
+      "count": 1
+    },
+    "severity": 8,
+    "createdAt": "2021-12-06T23:53:50.962Z",
+    "updatedAt": "2021-12-06T23:53:50.962Z",
+    "title": "Domain related to known malicious domains queried by EC2 instance i-99999999.",
+    "description": "EC2 instance i-99999999 is querying a low reputation domain that is associated with known malicious domains."
+  }
+}
